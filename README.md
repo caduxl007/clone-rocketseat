@@ -9,6 +9,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled-components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
 
 <h1>📱 Como usar?</h1>
 
@@ -24,15 +25,17 @@ E lógico é bom ter um editor para trabalhar com o código como [VSCode](https:
 # Clone este repositório
 $ git clone <https://github.com/caduxl007/clone-rocketseat.git>
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd clone-rocketseat
+# Clone o repositório do backend
+$ git clone <https://github.com/caduxl007/backend-clone-rocketseat.git>
 
+# Acesse a pasta do projeto backend no terminal/cmd
+$ cd backend-clone-rocketseat
 
 Instale as dependências
 $ yarn
 
-# Execute a aplicação
-$ yarn start
+# Execute o server
+$ yarn dev:server
 
 ## Prontinho você terá acesso a aplicação!!!
 ```
