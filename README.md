@@ -28,14 +28,33 @@ $ git clone <https://github.com/caduxl007/clone-rocketseat.git>
 # Clone o repositório do backend
 $ git clone <https://github.com/caduxl007/backend-clone-rocketseat.git>
 
+# Após instalar o docker execute no terminal/cmd
+$ docker run --name "nome-que-quiser" -e POSTGRES_PASSWORD=docker -p 5434:5432 -d postgres
+
+# Use qualquer gerenciar de banco de dados crie uma database no postgres:
+$ nome da database: clone_rocketseat
+$ port: 5434
+
 # Acesse a pasta do projeto backend no terminal/cmd
 $ cd backend-clone-rocketseat
 
 Instale as dependências
 $ yarn
 
-# Execute o server
+# Execute o comando para instalar as tabelas
+$ yarn typeorm migration:run
+
+# Execute a aplicação
 $ yarn dev:server
+
+# Acesse a pasta do projeto frotend
+$ cd clone-rocketseat
+
+Instale as dependências
+$ yarn
+
+# Execute a aplicação
+$ yarn start
 
 ## Prontinho você terá acesso a aplicação!!!
 ```
