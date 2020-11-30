@@ -48,6 +48,23 @@ export const Container = styled.div`
       line-height: 64px;
       color: rgb(225, 225, 230);
       margin-bottom: 24px;
+
+      @media (max-width: 452px) {
+        font-size: 30px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    padding: 28px 32px 50px 32px;
+    height: 100%;
+
+    > div {
+      margin: 0 auto;
+      align-self: flex-start;
+      max-width: 480px;
     }
   }
 `;
@@ -59,6 +76,10 @@ export const ContentLogin = styled.section<ContentLoginProps>`
   padding: 64px;
   background: rgb(32, 32, 36);
   border-radius: 5px;
+
+  @media (max-width: 452px) {
+    padding: 32px;
+  }
 
   form {
     > a {

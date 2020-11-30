@@ -43,6 +43,10 @@ export const Container = styled.div`
       font-size: 36px;
       color: rgb(225, 225, 230);
       margin-bottom: 24px;
+
+      @media (max-width: 452px) {
+        font-size: 30px;
+      }
     }
 
     > p {
@@ -73,6 +77,18 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 760px) {
+    flex-direction: column-reverse;
+    padding: 28px 32px 50px 32px;
+    height: 100%;
+
+    > div {
+      margin: 0 auto;
+      align-self: flex-start;
+      max-width: 480px;
+    }
+  }
 `;
 
 export const ContentRegister = styled.section`
@@ -82,6 +98,10 @@ export const ContentRegister = styled.section`
   padding: 64px;
   background: rgb(32, 32, 36);
   border-radius: 5px;
+
+  @media (max-width: 452px) {
+    padding: 32px;
+  }
 
   form {
     h1 {

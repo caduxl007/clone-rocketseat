@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <div>
             <Logo />
           </div>
-          <Link to="/manifesto">Manifesto</Link>
+          <Link to="/">Manifesto</Link>
         </div>
 
         <Link to="/login">Entrar</Link>

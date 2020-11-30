@@ -32,6 +32,10 @@ export const Header = styled.header`
       &:hover {
         text-decoration: underline;
       }
+
+      @media (max-width: 477px) {
+        display: none;
+      }
     }
   }
 
@@ -114,6 +118,25 @@ export const Content = styled.div`
       }
     }
   }
+
+  @media (max-width: 722px) {
+    > h2 {
+      font-size: 48px;
+    }
+
+    > div {
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 0 0 60px 0;
+
+      > p {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
 `;
 
 export const Background = styled.div`
@@ -137,9 +160,16 @@ export const ContentTwo = styled.section`
     font-size: 36px;
     line-height: 42px;
     margin: 0 auto;
+
+    @media (max-width: 477px) {
+      font-size: 22px;
+      line-height: 25px;
+      max-width: 206px;
+    }
   }
 
   > div {
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     grid-row-gap: 64px;
@@ -148,9 +178,30 @@ export const ContentTwo = styled.section`
     align-items: center;
     padding-top: 80px;
 
+    @media (max-width: 722px) {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      grid-row-gap: 0;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
     p {
       font-size: 30px;
       color: #ccc;
+
+      @media (max-width: 722px) {
+        height: 65px;
+        width: calc((100% / 3));
+      }
+
+      @media (max-width: 477px) {
+        font-size: 20px;
+      }
     }
   }
 `;
@@ -161,6 +212,15 @@ export const Info = styled.section`
   -webkit-box-pack: justify;
   -webkit-box-align: center;
   align-items: center;
+
+  @media (max-width: 722px) {
+    margin: 120px auto 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    &:not(:nth-child(2n)) {
+      flex-direction: column-reverse;
+    }
+  }
 `;
 
 export const InfoImg = styled.div`
@@ -172,6 +232,10 @@ export const InfoImg = styled.div`
   transition: opacity 500ms ease 0s;
   img {
     max-width: 100%;
+
+    @media (max-width: 722px) {
+      max-width: 90%;
+    }
   }
 `;
 
@@ -192,11 +256,28 @@ export const InfoText = styled.div`
     line-height: 107%;
     font-weight: 700;
     padding: 40px 0 24px 0;
+
+    @media (max-width: 477px) {
+      font-size: 30px;
+    }
   }
 
   p {
     font-size: 18px;
     line-height: 167%;
     color: #a8a8b3;
+
+    @media (max-width: 477px) {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 722px) {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 477px) {
+    max-width: 287px;
   }
 `;

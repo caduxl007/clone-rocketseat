@@ -59,3 +59,10 @@ export const Container = styled.div<ContainerProps>`
     color: rgb(255, 255, 255);
   }
 `;
+
+export const Error = styled.p`
+  display: inline-block;
+  color: rgb(211, 66, 66);
+  padding: 7px 0;
+  font-size: 14px;
+`;
