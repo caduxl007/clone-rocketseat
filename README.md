@@ -39,7 +39,7 @@ $ port: 5434
 $ cd backend-clone-rocketseat
 
 Instale as dependências
-$ yarn
+$ yarn 
 
 # Execute o comando para instalar as tabelas
 $ yarn typeorm migration:run
