@@ -11,7 +11,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Styled-components](https://styled-components.com/)
 - [Axios](https://github.com/axios/axios)
 
-<h1>📱 Como usar? </h1>
+<h1>📱 Como usar? </h1> 
 
 ### Pré-requisitos
 
