@@ -56,5 +56,5 @@ $ yarn
 # Execute a aplicação
 $ yarn start
 
-## Prontinho você terá acesso a aplicação!!!
+## Prontinho você terá acesso a aplicação!!! 
 ```
