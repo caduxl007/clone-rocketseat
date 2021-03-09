@@ -50,7 +50,7 @@ $ yarn dev:server
 # Acesse a pasta do projeto frotend
 $ cd clone-rocketseat
 
-Instale as dependências
+Instale as dependências 
 $ yarn
 
 # Execute a aplicação
